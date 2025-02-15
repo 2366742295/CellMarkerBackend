@@ -16,3 +16,6 @@ def GetUserId(request):
 def CreateUser(request):
     models.User.objects.create(name="用户1")
     return HttpResponse("创建成功")
+
+def Test(request):
+    return HttpResponse("测试")
